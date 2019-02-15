@@ -1,0 +1,62 @@
+body {
+    margin: 0;
+    background-color: rgb(206, 206, 206);
+}
+.header {
+    height: 74px;
+    background: white;
+    border-bottom: 1px solid black;
+}
+
+.insideheader {
+    margin: 0 auto;
+    position: relative;
+    top: 0;
+    height: 74px;
+    width: 1000px;
+    position: center;
+    background: white;
+}
+
+.name {
+    float: left;
+    padding: 20px;
+    top: 0;
+    font-size: 30px;
+    height: auto;
+    color: white;
+    background-color: rgb(72, 165, 160);
+}
+
+.nav {
+    padding: 20px;
+    right: 0;
+    overflow: hidden;
+}
+
+.nav a {
+    padding: 20px;
+    float: right;
+    display: block;
+    color: black;
+    text-align: center;
+    padding: 8px 16px;
+    text-decoration: none;
+}
+
+.nav a:hover {
+    background-color: rgb(72, 165, 160);
+    color: white;
+}
+
+.footer {
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    border-top: 5px solid rgb(73, 127, 131);
+    background-color: rgb(107, 107, 107);
+    height: 50px;
+    text-align: center;
+    color: white;
+    font-size: 8px;
+}
