@@ -24,7 +24,6 @@ body {
     padding: 20px;
     top: 0;
     font-size: 30px;
-    height: auto;
     color: white;
     background-color: rgb(153, 214, 211);
 }
@@ -51,9 +50,25 @@ body {
     color: white;
 }
 
+
 .main{
-    
+    border: 1px black;
+    margin: 0px auto;
+    width: 100px;
+    height: 100px;
+    background: white;
 }
+
+.mainhead{
+    font-family: 'Courier New', Courier, monospace;
+    float: left;
+    padding: 20px;
+    top: 0;
+    font-size: 30px;
+    color: white;
+    background-color: rgb(153, 214, 211);
+}
+
 .footer {
     position: fixed;
     bottom: 0;
