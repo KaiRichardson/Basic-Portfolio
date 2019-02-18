@@ -1,16 +1,16 @@
 body {
     margin: 0;
-    background-color: rgb(206, 206, 206);
+    background-color: rgb(235, 235, 235);
 }
-.header {
+/* header starts here */
+#header {
     height: 74px;
     background: white;
-    border-bottom: 1px solid black;
+    border-bottom: 2px solid rgb(206, 206, 206);
 }
 
-.insideheader {
+#insideheader {
     margin: 0 auto;
-    position: relative;
     top: 0;
     height: 74px;
     width: 1000px;
@@ -18,8 +18,8 @@ body {
     background: white;
 }
 
-.name {
-    font-family: 'Courier New', Courier, monospace;
+#name {
+    font-family: Georgia, 'Times New Roman', Times, serif;
     float: left;
     padding: 20px;
     top: 0;
@@ -28,58 +28,73 @@ body {
     background-color: rgb(153, 214, 211);
 }
 
-.nav {
-    padding: 20px;
+#navi {
+    padding-top: 20px;
     right: 0;
-    overflow: hidden;
 }
 
-.nav a {
-    font-family: 'Courier New', Courier, monospace;
-    padding: 20px;
+#navi a {
+    font-family: Georgia, 'Times New Roman', Times, serif;
     float: right;
     display: block;
-    color: black;
+    color: rgb(172, 172, 172);
     text-align: center;
     padding: 8px 16px;
     text-decoration: none;
 }
 
-.nav a:hover {
+#navi a:hover {
     background-color: rgb(153, 214, 211);
     color: white;
 }
 
-
-.main{
-    border: 1px black;
-    margin: 0px auto;
-    width: 100px;
-    height: 100px;
+/* body from index */
+#main {
+    margin: 20px auto;
+    width: 940px;
+    height: auto;
     background: white;
+    padding: 0 30px 20px 30px;
 }
 
-.mainhead{
-    font-family: 'Courier New', Courier, monospace;
-    float: left;
+#mainhead {
     padding: 20px;
-    top: 0;
+    font-family: Georgia, 'Times New Roman', Times, serif;
     font-size: 30px;
-    color: white;
-    background-color: rgb(153, 214, 211);
+    color: rgb(153, 214, 211);
+    border-bottom: 2px solid rgb(206, 206, 206);
+    font-weight: bold;
 }
 
-.footer {
-    position: fixed;
+#mainbody {
+    font-size: 20px;
+    color: rgb(172, 172, 172);
+}
+
+.textbody {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    white-space: pre-wrap;
+    line-height: 2;
+}
+
+#face {
+    margin: 0px 20px 20px 0px;
+    float: left;
+}
+
+/* footer starts here */
+#footer {
+    margin-top: 30px;
+    position: center;
     bottom: 0;
     width: 100%;
-    border-top: 5px solid rgb(73, 127, 131);
-    background-color: rgb(107, 107, 107);
+    border-top: 5px solid rgb(129, 182, 185);
+    background-color: rgb(110, 110, 110);
     height: 50px;
     text-align: center;
 }
 
-.foottext {
+#foottext {
     color: white;
     font-size: 8px;
     padding-top: 25px;
