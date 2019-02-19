@@ -48,11 +48,11 @@ body {
     color: white;
 }
 
-/* body from index */
+/* body for 'about' page */
 #main {
+    min-height: 100vh;
     margin: 20px auto;
     width: 940px;
-    height: auto;
     background: white;
     padding: 0 30px 20px 30px;
 }
@@ -82,10 +82,65 @@ body {
     float: left;
 }
 
+/* body for 'contact' page */
+
+#contactform {
+    white-space: pre-line;
+}
+
+label {
+    color: rgb(172, 172, 172);
+
+}
+
+input[type=text], textarea {
+    width: 920px;
+    resize: vertical;
+    margin: 5px 0 5px 0;
+    border: 1px solid rgb(172, 172, 172);
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    padding: 10px;
+}
+
+input[type=submit] {
+    background-color: rgb(153, 214, 211);
+    color: white;
+    border: 0px;
+    padding: 10px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 20px;
+}
+
+input[type=submit]:hover {
+    background-color: rgb(114, 160, 158);
+}
+
+/* body for 'portfolio' page */
+
+#column {
+    display: inline;
+}
+
+#image {
+    object-fit: cover;
+    margin: 20px;
+    height: 190px;
+    width: 250px;
+    border: 1px solid rgb(110, 110, 110);
+}
+
+#ptext {
+    position: center;
+    text-decoration: none;
+    color: white;
+    background-color: rgb(153, 214, 211);
+    padding: 10px;
+}
+
 /* footer starts here */
 #footer {
-    margin-top: 30px;
-    position: center;
+    margin-top: 10;
+    position: relative;
     bottom: 0;
     width: 100%;
     border-top: 5px solid rgb(129, 182, 185);
