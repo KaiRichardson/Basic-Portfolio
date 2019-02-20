@@ -1,6 +1,7 @@
 body {
     margin: 0;
-    background-color: rgb(235, 235, 235);
+    background: url("../images/background.png");
+    background-repeat: repeat;
 }
 /* header starts here */
 #header {
@@ -31,6 +32,10 @@ body {
 #navi {
     padding-top: 20px;
     right: 0;
+}
+
+#navi a:not(:first-child) {
+    border-right: 1px solid rgb(153, 214, 211);
 }
 
 #navi a {
@@ -117,25 +122,65 @@ input[type=submit]:hover {
 
 /* body for 'portfolio' page */
 
-#column {
-    display: inline;
+#bucket {
+    width: 65%;
 }
 
-#image {
-    object-fit: cover;
-    margin: 20px;
-    height: 190px;
-    width: 250px;
-    border: 1px solid rgb(110, 110, 110);
+.column {
+    position: relative;
+    background-color: black;
+    margin: 20px 0;
+    width: 45%;
+    float: left;
+    height: 200px;
 }
 
-#ptext {
-    position: center;
-    text-decoration: none;
+.column:nth-of-type(even) {
+    float: right;
+}
+
+.column h4 {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    background: rgb(114, 160, 158);
     color: white;
-    background-color: rgb(153, 214, 211);
-    padding: 10px;
+    text-align: center;
+    padding: 20px 0;
+    width: 100%;
+    position: absolute;
+    bottom: 0px;
 }
+
+#proj1 {
+    background-color: aqua;
+    /* background: url('../assets/images/background.png'); */
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+ #proj2 {
+    background: url("../assets/images/trivia.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+} 
+/*
+
+#proj3 {
+    background: url("../assets/images/Rock-Paper-Scissors.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+#proj4 {
+    background: url("../assets/images/rpg.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+#proj5 {
+    background: url("../assets/images/app.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+} */ 
 
 /* footer starts here */
 #footer {
