@@ -2,21 +2,24 @@ body {
     margin: 0;
     background: url("../images/background.png");
     background-repeat: repeat;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
 }
 /* header starts here */
 #header {
     height: 74px;
-    background: white;
-    border-bottom: 2px solid rgb(206, 206, 206);
+    background: #ffffff;
+    border-bottom: 2px solid #cccccc;
 }
 
 #insideheader {
     margin: 0 auto;
     top: 0;
     height: 74px;
-    width: 1000px;
+    width: 960px;
     position: center;
-    background: white;
+    background: #ffffff;
 }
 
 #name {
@@ -25,9 +28,10 @@ body {
     padding: 20px;
     top: 0;
     font-size: 30px;
-    color: white;
-    background-color: rgb(153, 214, 211);
+    color: #ffffff;
+    background-color: #4aaaa5;
 }
+
 
 #navi {
     padding-top: 20px;
@@ -35,29 +39,29 @@ body {
 }
 
 #navi a:not(:first-child) {
-    border-right: 1px solid rgb(153, 214, 211);
+    border-right: 1px solid #777777;
 }
 
 #navi a {
     font-family: Georgia, 'Times New Roman', Times, serif;
     float: right;
     display: block;
-    color: rgb(172, 172, 172);
     text-align: center;
     padding: 8px 16px;
     text-decoration: none;
+    color: #777777;
 }
 
 #navi a:hover {
-    background-color: rgb(153, 214, 211);
-    color: white;
+    background-color: #4aaaa5;
+    color: #ffffff;
 }
 
 #main {
-    min-height: 100%;
+    flex: 1;
     margin: 20px auto;
-    width: 940px;
-    background: white;
+    width: 900px;
+    background: #ffffff;
     padding: 0 30px 20px 30px;
 }
 
@@ -65,18 +69,18 @@ body {
     padding: 20px;
     font-family: Georgia, 'Times New Roman', Times, serif;
     font-size: 30px;
-    color: rgb(153, 214, 211);
-    border-bottom: 2px solid rgb(206, 206, 206);
+    color: #4aaaa5;
+    border-bottom: 2px solid #cccccc;
     font-weight: bold;
 }
 /* body for 'about' page */
 #mainbody {
     font-size: 20px;
-    color: rgb(172, 172, 172);
+    color: #777777;
 }
 
 .textbody {
-    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-family: 'Arial', 'Helvetica Neue', Helvetica, sans-serif;
     white-space: pre-wrap;
     line-height: 2;
 }
@@ -93,29 +97,29 @@ body {
 }
 
 label {
-    color: rgb(172, 172, 172);
+    color: #777777;
 
 }
 
 input[type=text], textarea {
-    width: 920px;
+    width: 850px;
     resize: vertical;
     margin: 5px 0 5px 0;
-     font-family: Georgia, 'Times New Roman', Times, serif;
+    font-family: 'Arial', 'Helvetica Neue', Helvetica, sans-serif;
     padding: 10px;
 }
 
 input[type=submit] {
-    background-color: rgb(153, 214, 211);
-    color: white;
+    background-color: #4aaaa5;
+    color: #ffffff;
     border: 0px;
     padding: 10px;
-    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-family: 'Arial', 'Helvetica Neue', Helvetica, sans-serif;
     font-size: 20px;
 }
 
 input[type=submit]:hover {
-    background-color: rgb(114, 160, 158);
+    background-color: #2b6865;
 }
 
 /* body for 'portfolio' page */
@@ -127,26 +131,24 @@ input[type=submit]:hover {
 
 .column {
     position: relative;
-    background-color: black;
     margin: 20px 0;
     width: 45%;
     float: left;
     height: 200px;
-
 }
 
-.column h4:hover {
-    background-color: rgb(43, 63, 62);
+.column p:hover {
+    background-color: #2b6865;
 }
 
 .column:nth-of-type(even) {
     float: right;
 }
 
-.column h4 {
+.column p {
     font-family: Georgia, 'Times New Roman', Times, serif;
-    background: rgb(114, 160, 158);
-    color: white;
+    background: #4aaaa5;
+    color: #ffffff;
     text-align: center;
     padding: 20px 0;
     width: 100%;
@@ -158,6 +160,7 @@ input[type=submit]:hover {
     background: url("../images/hangman.jpg");
     background-size: cover;
     background-repeat: no-repeat;
+
 }
 
  #proj2 {
@@ -192,19 +195,19 @@ input[type=submit]:hover {
 
 /* footer starts here */
 #footer {
-    margin-top: 10;
+    margin-top: auto;
     position: relative;
     bottom: 0;
     width: 100%;
-    border-top: 5px solid rgb(129, 182, 185);
-    background-color: rgb(110, 110, 110);
+    border-top: 8px solid #4aaaa5;
+    background-color: #666666;
     height: 50px;
     text-align: center;
 }
 
 #foottext {
-    color: white;
+    color: #ffffff;
     font-size: 8px;
     padding-top: 25px;
-    font-family: 'Courier New', Courier, monospace;
+    font-family: 'Arial', 'Helvetica Neue', Helvetica, sans-serif;
 }
