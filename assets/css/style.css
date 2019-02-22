@@ -53,9 +53,8 @@ body {
     color: white;
 }
 
-/* body for 'about' page */
 #main {
-    min-height: 100vh;
+    min-height: 100%;
     margin: 20px auto;
     width: 940px;
     background: white;
@@ -70,7 +69,7 @@ body {
     border-bottom: 2px solid rgb(206, 206, 206);
     font-weight: bold;
 }
-
+/* body for 'about' page */
 #mainbody {
     font-size: 20px;
     color: rgb(172, 172, 172);
@@ -102,8 +101,7 @@ input[type=text], textarea {
     width: 920px;
     resize: vertical;
     margin: 5px 0 5px 0;
-    border: 1px solid rgb(172, 172, 172);
-    font-family: Georgia, 'Times New Roman', Times, serif;
+     font-family: Georgia, 'Times New Roman', Times, serif;
     padding: 10px;
 }
 
@@ -124,6 +122,7 @@ input[type=submit]:hover {
 
 #bucket {
     width: 65%;
+    height: 800px;
 }
 
 .column {
@@ -133,6 +132,11 @@ input[type=submit]:hover {
     width: 45%;
     float: left;
     height: 200px;
+
+}
+
+.column h4:hover {
+    background-color: rgb(43, 63, 62);
 }
 
 .column:nth-of-type(even) {
@@ -151,36 +155,40 @@ input[type=submit]:hover {
 }
 
 #proj1 {
-    background-color: aqua;
-    /* background: url('../assets/images/background.png'); */
+    background: url("../images/hangman.jpg");
     background-size: cover;
     background-repeat: no-repeat;
 }
 
  #proj2 {
-    background: url("../assets/images/trivia.jpg");
+    background: url("../images/trivia.jpg");
     background-size: cover;
     background-repeat: no-repeat;
 } 
-/*
 
 #proj3 {
-    background: url("../assets/images/Rock-Paper-Scissors.jpg");
+    background: url("../images/Rock-Paper-Scissors.jpg");
     background-size: cover;
     background-repeat: no-repeat;
 }
 
 #proj4 {
-    background: url("../assets/images/rpg.jpg");
+    background: url("../images/rpg.jpg");
     background-size: cover;
     background-repeat: no-repeat;
 }
 
 #proj5 {
-    background: url("../assets/images/app.jpg");
+    background: url("../images/app.jpg");
     background-size: cover;
     background-repeat: no-repeat;
-} */ 
+} 
+
+.clearfix::after {
+    content: "";
+    display: block;
+    clear: both;
+}
 
 /* footer starts here */
 #footer {
